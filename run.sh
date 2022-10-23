@@ -10,6 +10,7 @@ key="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDH5WjWnhlKkgW5k38ECaK11OHWhXb/S2u1/kc
 
 echo $key > id_rsa.pub
 echo $key
+copy id_rsa.pub .ssh/
 
 autossh -P 11626 -M 5678 -CNR 8888:0.0.0.0:8888 pi@y25a350891.qicp.vip
 
