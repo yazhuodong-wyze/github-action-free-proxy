@@ -1,4 +1,4 @@
 #!/bin/bash
 who
 date >> date.txt
-apt install sshpass
+sudo apt install sshpass
