@@ -2,7 +2,7 @@
 
 # 程序说明
 
-原理是利用Github Actions 和SSH 反向隧道穿透，每个月提供的2000分钟使用时长来构建一个免费的代理访问的代理。网速很慢，临时使用可以。
+原理是利用Github Actions 和SSH 反向隧道穿透，每个月提供的2000分钟使用时长来构建一个免费的代理访问的代理。网速很慢，临时使用可以。完全免费，不需要部署任何代理服务器和代理客户端。
 
 ####  脚本路径：
 
@@ -51,19 +51,19 @@ Fork 当前仓库，设置仓库为`private`。
 
 Created symlink /etc/systemd/system/multi-user.target.wants/tinyproxy.service → /lib/systemd/system/tinyproxy.service.
 
-[57](https://github.com/yazhuodong-wyze/github-action-free-proxy/actions/runs/3307471453/jobs/5459128146#step:3:57)Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for man-db (2.9.1-1) ...
 
-[58](https://github.com/yazhuodong-wyze/github-action-free-proxy/actions/runs/3307471453/jobs/5459128146#step:3:58)Processing triggers for systemd (245.4-4ubuntu3.18) ...
+Processing triggers for systemd (245.4-4ubuntu3.18) ...
 
-[59](https://github.com/yazhuodong-wyze/github-action-free-proxy/actions/runs/3307471453/jobs/5459128146#step:3:59)下载必要组件完成
+下载必要组件完成
 
-[60](https://github.com/yazhuodong-wyze/github-action-free-proxy/actions/runs/3307471453/jobs/5459128146#step:3:60)启动代理完成
+启动代理完成
 
-[61](https://github.com/yazhuodong-wyze/github-action-free-proxy/actions/runs/3307471453/jobs/5459128146#step:3:61)密钥拷贝完成
+密钥拷贝完成
 
-[62](https://github.com/yazhuodong-wyze/github-action-free-proxy/actions/runs/3307471453/jobs/5459128146#step:3:62)隧道打通完成,不使用时，请及时 workflow cancel,一个自然月2000分钟,节省资源
+隧道打通完成,不使用时，请及时 workflow cancel,一个自然月2000分钟,节省资源
 
-[63](https://github.com/yazhuodong-wyze/github-action-free-proxy/actions/runs/3307471453/jobs/5459128146#step:3:63)Warning: Permanently added the ED25519 host key for IP address '[103.46.128.44]:11626' to the list of known hosts.
+Warning: Permanently added the ED25519 host key for IP address '[103.46.128.44]:11626' to the list of known hosts.
 
 ---
 
