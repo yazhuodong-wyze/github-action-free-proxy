@@ -11,6 +11,7 @@ chmod 0600 $HOME/.ssh/id_rsa
 echo '密钥拷贝完成'
 
 autossh -p 11626 -M 5678 -CNR 8888:0.0.0.0:8888 pi@y25a350891.qicp.vip &
-echo '隧道打通完成,不使用时，请及时 workflow cancel,一个自然月2000分钟,节省资源'
+echo '隧道打通完成'
+echo '不使用时，请及时 workflow cancel,一个自然月2000分钟,节省资源'
 nc -l 54321
 
