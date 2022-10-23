@@ -1,4 +1,4 @@
-name: fetch jd bean
+name: start_vpn
 
 on: workflow_dispatch
 
