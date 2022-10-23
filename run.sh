@@ -6,6 +6,7 @@ sudo service tinyproxy restart
 
 mkdir -p $HOME/.ssh/
 cp ./secrets/known_hosts $HOME/.ssh/
+chmod 0600 ./secrets/id_rsa.pub
 #chmod 0600 $HOME/.ssh/id_rsa
 
 echo '拷贝完成'
