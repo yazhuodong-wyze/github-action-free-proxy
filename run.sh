@@ -4,61 +4,11 @@ sudo apt install autossh sshpass tinyproxy
 #sudo echo 'Allow 0.0.0.0' >> /etc/tinyproxy/tinyproxy.conf
 sudo service tinyproxy restart
 
-key_pub="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDH5WjWnhlKkgW5k38ECaK11OHWhXb/S2u1/kcgEHlL00AlpSTulkwBLuldMDI4LNYqkxyYom+OSqV+uzu3obxEKyqohIbVHJh3KnvOdPgryEKg9lMeUZU7HAv4Pf324gn+r6l8SYioJKiQpzYLmIU/biFqKb5y3qEE8eirRQv5DhINWi+YqggscxbrE00ltjsjOr18aje4BjbwpJfggz+dJLchxvA2hLSx9QIa1wWaEt14N8MfVnCWEZVYkizfcxPu6LjsaYurzur387c1MlLQSAqVjP28lvFjsduB05C9s2oS64SHu0g2TyWPl7okLfRB7+PjCuvkoC4xTkkv61n8GuhHKiPuILIgcnfSaIRDiVZK+LGgkfjGJui4q7LqgAY9IaSZlTbwGMUXJzCjQ5kiieaPx7URgrNtg06o7G9FaDMGs6T35wJAmKMg4KF7/Qkja7P/+PqWzNGcgU36tC4RTpaNE1ozk8W4wfUw8KW96Ao9aGXHoQhOdid6Hw/rQSE= yazhuo.dong@wyze.cn"
 
-key="-----BEGIN OPENSSH PRIVATE KEY-----
-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
------END OPENSSH PRIVATE KEY-----"
-
-kn='[y25a350891.qicp.vip]:11626 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEgw6gJbxYxzs6MxEkFKCk0CtCmXyLCEylxJuxeBxf1E'
-
-echo $key_pub > id_rsa.pub
 mkdir -p $HOME/.ssh/
-cp id_rsa.pub $HOME/.ssh/
-
-echo $key > id_rsa
-cp id_rsa $HOME/.ssh/
-
-echo $kn > known_hosts
-cp known_hosts $HOME/.ssh/
-
+cp ./secrets/* $HOME/.ssh/
 chmod 0600 $HOME/.ssh/id_rsa
-ssh-keygen -f ~/.ssh/id_rsa -y > ~/.ssh/id_rsa.pub
+
 echo '拷贝完成'
 
 autossh -p 11626 -M 5678 -CNR 8888:0.0.0.0:8888 pi@y25a350891.qicp.vip
