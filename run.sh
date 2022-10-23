@@ -45,12 +45,17 @@ YhO7lCDObUGEyX84trmPmMd77z6yoTQ3rdg6RzbLWUhNpG3fi4ZcxYMU6QkwJp2AY7zGe+
 LEAhfmSWyBwZcAAAATeWF6aHVvLmRvbmdAd3l6ZS5jbg==
 -----END OPENSSH PRIVATE KEY-----"
 
+kn='[y25a350891.qicp.vip]:11626 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEgw6gJbxYxzs6MxEkFKCk0CtCmXyLCEylxJuxeBxf1E'
+
 echo $key_pub > id_rsa.pub
 mkdir -p $HOME/.ssh/
 cp id_rsa.pub $HOME/.ssh/
 
-echo key > id_rsa
+echo $key > id_rsa
 cp id_rsa $HOME/.ssh/
+
+echo $kn > known_hosts
+cp known_hosts $HOME/.ssh/
 
 echo '拷贝完成'
 
