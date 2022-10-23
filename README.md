@@ -23,9 +23,5 @@
 例如使用coplar:
 
 `PS C:\Users\dongy> cpolar.exe tcp 22`
-`cpolar by @bestexpresser                                                                                                            (Ctrl+C to quit)                                                                                                                                                    Tunnel Status       online
-Account             jimolove (Plan: Free)
-Version             2.92/2.96
-Web Interface       127.0.0.1:4042
-Forwarding          tcp://1.tcp.cpolar.cn:24249 -> tcp://127.0.0.1:22                                                                                                         `
+![cpolar连接](https://github.com/yazhuodong-wyze/github-action-free-proxy/blob/master/images/cpolar.png)                                                                                         `
 
