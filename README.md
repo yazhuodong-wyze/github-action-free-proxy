@@ -31,7 +31,7 @@ Version             2.92/2.96
 Web Interface       127.0.0.1:4042  
 Forwarding          tcp://1.tcp.cpolar.cn:24249 -> tcp://127.0.0.1:22           
 
-使用ssh client调试好的你的ssh密钥可以自动登录你的本地计算机，利用ssh-keygen生成公钥私钥，利用ssh-copy-id上传公钥。[[上传公钥实现ssh登录 (jianshu.com)](https://www.jianshu.com/p/44f4b7353249)](https://www.jianshu.com/p/44f4b7353249)
+使用ssh client调试好的你的ssh密钥可以自动登录你的本地计算机，利用ssh-keygen生成公钥私钥，利用ssh-copy-id上传公钥。[**上传公钥实现ssh登录**(https://www.jianshu.com/p/44f4b7353249)
 
 调试完成后，你应该生成`id_rsa``id_rsa.pub``known_hosts`,注意保存好。  
 
@@ -39,33 +39,9 @@ Forwarding          tcp://1.tcp.cpolar.cn:24249 -> tcp://127.0.0.1:22
 
 Fork 当前仓库，设置仓库为`private`。  
 
-修改secrets目标下的3个文件，使用你自己的文件替换。  
+修改secrets目录下的3个文件，使用你自己的文件替换。  
 
 点击仓库 `Actions`  ，再点击左侧的`All workflows proxy`,再运行右侧`Run workflow`。  
-
-点击进去详细信息你将会看到  
-
----
-
-
-
-Created symlink /etc/systemd/system/multi-user.target.wants/tinyproxy.service → /lib/systemd/system/tinyproxy.service.
-
-Processing triggers for man-db (2.9.1-1) ...
-
-Processing triggers for systemd (245.4-4ubuntu3.18) ...
-
-下载必要组件完成
-
-启动代理完成
-
-密钥拷贝完成
-
-隧道打通完成,不使用时，请及时 workflow cancel,一个自然月2000分钟,节省资源
-
-Warning: Permanently added the ED25519 host key for IP address '[103.46.128.44]:11626' to the list of known hosts.
-
----
 
 再次查看你的本机计算机的网络连接，你应该可以看到一条127.0.0.1:8888的端口监听。  
 
