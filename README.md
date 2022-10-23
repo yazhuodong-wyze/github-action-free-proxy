@@ -18,7 +18,7 @@
 
 你需要拥有一个可以公开访问的SSH Server。
 
-如果你没有公网服务器和IP也没有关系。可以使用[**花生壳**](https://hsk.oray.com/)，[**cpolar**](https://www.cpolar.com/))把自己本地计算机的SSH端口映射到公网。
+如果你没有公网服务器和IP也没有关系。可以使用[**花生壳**](https://hsk.oray.com/)，[**cpolar**](https://www.cpolar.com/)把自己本地计算机的SSH端口映射到公网。
 
 例如使用coplar:
 
