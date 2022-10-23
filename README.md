@@ -31,7 +31,7 @@ Version             2.92/2.96
 Web Interface       127.0.0.1:4042  
 Forwarding          tcp://1.tcp.cpolar.cn:24249 -> tcp://127.0.0.1:22           
 
-使用ssh client调试好的你的ssh密钥可以自动登录你的本地计算机，利用ssh-keygen生成公钥私钥，利用ssh-copy-id上传公钥。[**上传公钥实现ssh登录**(https://www.jianshu.com/p/44f4b7353249)
+使用ssh client调试好的你的ssh密钥可以自动登录你的本地计算机，利用ssh-keygen生成公钥私钥，利用ssh-copy-id上传公钥。[**上传公钥实现ssh登录**](https://www.jianshu.com/p/44f4b7353249)
 
 调试完成后，你应该生成`id_rsa``id_rsa.pub``known_hosts`,注意保存好。  
 
