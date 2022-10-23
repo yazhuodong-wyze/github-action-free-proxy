@@ -1,0 +1,19 @@
+name: fetch jd bean
+
+on: workflow_dispatch
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - name: checkout actions
+       uses: actions/checkout@v1
+
+#     - name: Set up Python 3.9
+#       uses: actions/setup-python@v1
+#       with:
+#         python-version: 3.9
+     - name: start
+       run:
+         bash run.sh
