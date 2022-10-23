@@ -1,4 +1,4 @@
-name: start_vpn
+name: proxy
 
 on: workflow_dispatch
 
