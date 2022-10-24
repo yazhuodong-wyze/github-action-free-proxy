@@ -33,13 +33,18 @@ Forwarding          tcp://1.tcp.cpolar.cn:24249 -> tcp://127.0.0.1:22
 
 使用ssh client调试好的你的ssh密钥可以自动登录你的本地计算机，利用ssh-keygen生成公钥私钥，利用ssh-copy-id上传公钥。[**上传公钥实现ssh登录**](https://www.jianshu.com/p/44f4b7353249)
 
-调试完成后，你应该生成`id_rsa``id_rsa.pub``known_hosts`,注意保存好。  
+调试完成后，你应该生成`id_rsa` `id_rsa.pub` `known_hosts`,注意保存好。  
 
 #### 开始使用：
 
 Fork 当前仓库，设置仓库为`private`。  
 
 修改secrets目录下的3个文件，使用你自己的文件替换。  
+
+修改run.sh 里面的3个变量
+`your_server_domain_or_ip='y25a35089.qicp.vip'
+your_server_ssh_port=11626
+your_server_user=pi`
 
 点击仓库 `Actions`  ，再点击左侧的`All workflows proxy`,再运行右侧`Run workflow`。  
 
