@@ -42,9 +42,9 @@ Fork 当前仓库，设置仓库为`private`。
 修改secrets目录下的3个文件，使用你自己的文件替换。  
 
 修改run.sh 里面的3个变量
-`your_server_domain_or_ip='y25a35089.qicp.vip'
-your_server_ssh_port=11626
-your_server_user=pi`
+`your_server_domain_or_ip='***'  
+your_server_ssh_port=22  
+your_server_user=user_name`
 
 点击仓库 `Actions`  ，再点击左侧的`All workflows proxy`,再运行右侧`Run workflow`。  
 
