@@ -2,7 +2,7 @@
 
 # 程序说明
 
-原理是利用Github Actions 和SSH 反向隧道穿透，每个月提供的2000分钟使用时长来构建一个免费的代理访问的代理。网速比较慢，临时使用可以。完全免费，不需要部署任何代理服务器和代理客户端。
+原理是利用Github Actions 和SSH 反向隧道穿透，每个月提供的2000分钟使用时长来构建一个免费的代理访问的代理。网速比较慢，不需要部署任何代理服务器和代理客户端。
 
 ####  脚本路径：
 
@@ -33,13 +33,18 @@ Forwarding          tcp://1.tcp.cpolar.cn:24249 -> tcp://127.0.0.1:22
 
 使用ssh client调试好的你的ssh密钥可以自动登录你的本地计算机，利用ssh-keygen生成公钥私钥，利用ssh-copy-id上传公钥。[**上传公钥实现ssh登录**](https://www.jianshu.com/p/44f4b7353249)
 
-调试完成后，你应该生成`id_rsa``id_rsa.pub``known_hosts`,注意保存好。  
+调试完成后，你应该生成`id_rsa` `id_rsa.pub` `known_hosts`,注意保存好。  
 
 #### 开始使用：
 
 Fork 当前仓库，设置仓库为`private`。  
 
 修改secrets目录下的3个文件，使用你自己的文件替换。  
+
+修改run.sh 里面的3个变量
+`your_server_domain_or_ip='***'  
+your_server_ssh_port=22  
+your_server_user=user_name`
 
 点击仓库 `Actions`  ，再点击左侧的`All workflows proxy`,再运行右侧`Run workflow`。  
 
