@@ -1,6 +1,6 @@
 #!/bin/bash
 
-your_server_domain_or_ip='y25a35089.qicp.vip'
+your_server_domain_or_ip='aaa.qicp.vip'
 your_server_ssh_port=11626
 your_server_user=pi
 
