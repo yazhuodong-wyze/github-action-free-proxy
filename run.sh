@@ -4,7 +4,7 @@ your_server_domain_or_ip='aaa.qicp.vip'
 your_server_ssh_port=11626
 your_server_user=pi
 
-sudo apt install autossh tinyproxy
+sudo apt install autossh tinyproxy --force-yes
 echo '下载必要组件完成'
 sudo service tinyproxy restart
 echo '启动代理完成'
