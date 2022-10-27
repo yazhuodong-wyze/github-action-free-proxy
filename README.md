@@ -1,7 +1,7 @@
-# 程序说明
+# 说明
 
 利用[GitHub Actions](https://docs.github.com/cn/actions/using-workflows) 和 [Cpolar](https://i.cpolar.com/m/4DDq)，进行每月2000分钟的代理访问。只需要使用邮箱申请一个[Cpolar](https://i.cpolar.com/m/4DDq)，然后Fork本仓库，配置一下GitHub Secrets，0代码，不需要安装任何附加软件。
-# 使用说明
+# 如何使用
 
 ### 1.Fork 当前仓库。  
 ### 2.使用邮箱注册[Cpolar](https://i.cpolar.com/m/4DDq)。  
