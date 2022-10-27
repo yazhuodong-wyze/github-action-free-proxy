@@ -1,53 +1,14 @@
 # 程序说明
 
-原理是利用Github Actions 和SSH 反向隧道穿透，每个月提供的2000分钟使用时长来构建一个免费的代理访问的代理。网速比较慢，不需要部署任何代理服务器和代理客户端。
-
-####  脚本路径：
-
-####  *.github/workflows/proxy.yml*
-
-#### 脚本开发规范：
-
-#### [Github Actions 开发规范](https://docs.github.com/cn/actions/using-workflows)
-
+利用[GitHub Actions](https://docs.github.com/cn/actions/using-workflows) 和 [Cpolar](https://i.cpolar.com/m/4DDq)，进行每月2000分钟的外网访问。只需要使用邮箱申请一个[Cpolar](https://i.cpolar.com/m/4DDq)，然后Fork本仓库,配置一下GitHub Secrets,不需要安装任何附加软件。
 # 使用说明
 
-#### 前提：
-
-你需要拥有一个可以公开访问的SSH Server。
-
-如果你没有公网服务器和IP也没有关系。可以使用[**花生壳**](https://hsk.oray.com/)，[**cpolar**](https://www.cpolar.com/)把自己本地计算机的SSH端口映射到公网。
-
-例如使用coplar:
-
-`PS C:\Users\dongy> cpolar.exe tcp 22`  
-
-Tunnel Status       online  
-
-Account             hihi(Plan: Free)  
-Version             2.92/2.96  
-Web Interface       127.0.0.1:4042  
-Forwarding          tcp://1.tcp.cpolar.cn:24249 -> tcp://127.0.0.1:22           
-
-使用ssh client调试好的你的ssh密钥可以自动登录你的本地计算机，利用ssh-keygen生成公钥私钥，利用ssh-copy-id上传公钥。[**上传公钥实现ssh登录**](https://www.jianshu.com/p/44f4b7353249)
-
-调试完成后，你应该生成`id_rsa` `id_rsa.pub` `known_hosts`,注意保存好。  
-
-#### 开始使用：
-
-Fork 当前仓库，设置仓库为`private`。  
-
-修改secrets目录下的3个文件，使用你自己的文件替换。  
-
-修改run.sh 里面的3个变量
-`your_server_domain_or_ip='***'  
-your_server_ssh_port=22  
-your_server_user=user_name`
-
-点击仓库 `Actions`  ，再点击左侧的`All workflows proxy`,再运行右侧`Run workflow`。  
-
-再次查看你的本机计算机的网络连接，你应该可以看到一条127.0.0.1:8888的端口监听。  
-
-使用时，需要把代理IP和端口配置到这里。  
-
-不使用或者掉线，请在github workflow cancel job或者 re-job。
+##### 1.Fork 当前仓库。
+##### 2.使用邮箱注册[Cpolar](https://i.cpolar.com/m/4DDq)。
+##### 3.复制 [Cpolar](https://i.cpolar.com/m/4DDq) Authtoken。![image](./images/copy_token.png)
+##### 4.找到Fork好的仓库的GitHub Secrets。![image](./images/create_secrets.png)
+##### 5.`New repository secret`,复制 [Cpolar](https://i.cpolar.com/m/4DDq) Authtoken 到 Actions secrets，Name必须使用 `CPOLAR_AUTHTOKEN` ![image](./images/create_secret.png)
+##### 6.运行 代理 GitHub Actions。![image](./images/run_action.png)
+##### 7.在[Cpolar](https://i.cpolar.com/m/4DDq) 上找到代理地址，找到地区是`us`(如果找不到请取消GitHub Action,重新运行)。![image](./images/view.png)
+##### 8.使用你的代理。![image](./images/proxy_use.png)
+##### 8.取消GitHub Actions(一个月默认2000分钟)。![image](./images/cancel_run.png)
