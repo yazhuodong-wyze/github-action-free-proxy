@@ -15,4 +15,4 @@ jobs:
           cpolar authtoken $CPOLAR_AUTHTOKEN
           sudo systemctl start cpolar
           echo 'go to https://dashboard.cpolar.com/status check your proxy address.'
-          cpolar tcp 8888
+          cpolar tcp -region=us 8888
