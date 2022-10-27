@@ -10,5 +10,7 @@ jobs:
      - name: checkout actions
        uses: actions/checkout@v1
      - name: start
+       env:
+          SCKEY: ${{ secrets.CPOLAR_AUTHTOKEN }}
        run:
          bash cpolar_run.sh
