@@ -14,4 +14,4 @@ jobs:
           sudo service tinyproxy restart
           sudo curl -L https://www.cpolar.com/static/downloads/install-release-cpolar.sh | sudo bash
           cpolar authtoken $CPOLAR_AUTHTOKEN
-          cpolar tcp 8888
+          cpolar -region=us tcp 8888
