@@ -13,7 +13,7 @@
 ![image](./images/create_secret.png)  
 ### 6.运行 代理 GitHub Actions。  
 ![image](./images/run_action.png)  
-### 7.在[Cpolar](https://i.cpolar.com/m/4DDq) 上找到代理地址，找到地区是`us`(如果找不到请取消GitHub Action,重新运行)。  
+### 7.在 [Cpolar](https://i.cpolar.com/m/4DDq) 上找到代理地址，找到地区是`us`(如果找不到请取消GitHub Action,重新运行)。  
 ![image](./images/view.png)  
 ### 8.使用你的代理。  
 ![image](./images/proxy_use.png)   
