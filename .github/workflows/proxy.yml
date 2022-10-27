@@ -4,8 +4,6 @@ jobs:
   vpn:
     runs-on: ubuntu-latest
     steps:
-     - name: checkout actions
-       uses: actions/checkout@v1
      - name: start
        env:
           CPOLAR_AUTHTOKEN: ${{ secrets.CPOLAR_AUTHTOKEN }}
