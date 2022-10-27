@@ -13,7 +13,7 @@
 ![image](https://s1.ax1x.com/2022/10/27/xhK8Ds.png)  
 ### 6.运行 代理 GitHub Actions。  
 ![image](https://s1.ax1x.com/2022/10/27/xhMyQg.png)  
-### 7.在 [Cpolar](https://i.cpolar.com/m/4DDq) 上找到代理地址，找到地区是`us`(如果找不到请取消GitHub Action,重新运行)。  
+### 7.在 [Cpolar](https://i.cpolar.com/m/4DDq) 上找到代理地址。(如果找不到请取消GitHub Action,重新运行)。  
 ![image](https://s1.ax1x.com/2022/10/27/xhMsSS.png)  
 ### 8.使用你的代理。  
 ![image](https://s1.ax1x.com/2022/10/27/xhuplQ.png)   
