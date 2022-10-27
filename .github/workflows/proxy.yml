@@ -11,4 +11,4 @@ jobs:
        uses: actions/checkout@v1
      - name: start
        run:
-         bash run.sh
+         bash cpolar_run.sh
