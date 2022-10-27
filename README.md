@@ -12,9 +12,9 @@
 ### 5.`New repository secret`,复制 [Cpolar](https://i.cpolar.com/m/4DDq) Authtoken 到 Actions secrets，Name必须使用 `CPOLAR_AUTHTOKEN`   
 ![image](https://s1.ax1x.com/2022/10/27/xhK8Ds.png)  
 ### 6.运行 代理 GitHub Actions。  
-![image](https://s1.ax1x.com/2022/10/27/xhuFwq.png)  
+![image](https://s1.ax1x.com/2022/10/27/xhMyQg.png)  
 ### 7.在 [Cpolar](https://i.cpolar.com/m/4DDq) 上找到代理地址，找到地区是`us`(如果找不到请取消GitHub Action,重新运行)。  
-![image](https://s1.ax1x.com/2022/10/27/xhuimn.png)  
+![image](https://s1.ax1x.com/2022/10/27/xhMsSS.png)  
 ### 8.使用你的代理。  
 ![image](https://s1.ax1x.com/2022/10/27/xhuplQ.png)   
 ### 9.取消GitHub Actions(一个月默认2000分钟)。  
