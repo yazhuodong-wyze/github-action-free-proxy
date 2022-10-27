@@ -17,5 +17,5 @@
 ![image](https://s1.ax1x.com/2022/10/27/xhMsSS.png)  
 ### 8.使用你的代理。  
 ![image](https://s1.ax1x.com/2022/10/27/xhuplQ.png)   
-### 9.取消GitHub Actions(一个月默认2000分钟)。  
+### 9.取消GitHub Action(一个月默认2000分钟)。  
 ![image](https://s1.ax1x.com/2022/10/27/xhuCOs.png)  
